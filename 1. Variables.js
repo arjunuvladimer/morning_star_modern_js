@@ -49,7 +49,7 @@ var g = {
 
 // SCOPE OF VARIABLES
 // Global Scope
-var i = 10
+var i = 10 
 function add(){
     console.log(i)
     function inside(){
@@ -63,7 +63,7 @@ function subtract(){
     var j = 11 // Locally belongs to subtract function
     console.log(j)
 }
-// console.log(j)
+console.log(subtract)
 
 // Block Scope
 {

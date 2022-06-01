@@ -71,3 +71,41 @@ function factorial(num){
 console.log(factorial(5))
 
 
+// Callback Functions
+function messaging(fnSms,fnEmail){ // Function Definition Messaging
+    console.log("Messaging")
+    fnSms() // Functional Call of fnSMS
+    fnEmail() // Functional Call of fnEmail
+}
+
+messaging(function fnSms(){
+    console.log("Printing SMS")
+}// Function Definiton of FNSMS
+, function fnEmail(){
+    console.log("Printing Email")
+}// Function Defintion of FnEmail
+)// Functional Call of Messaging Function
+
+// Note:
+// Function/ Function Definition as a parameter is passed
+// Functional Calls are being done in a call back way
+
+// Synchronous Functions
+function addition(){
+   console.log("Addition Function") 
+}
+function subtract(){
+    console.log("Subtract Function") 
+}
+function multiplication(){
+    console.log("Multiplication Function") 
+}
+function division(){
+    console.log("Division Function") 
+}
+
+// Asynchronous Programming
+addition()
+subtract() // delay of time
+multiplication()
+division()
