@@ -62,3 +62,48 @@ var everyResult = [1,10,12,13].every(
     }
 )
 console.log("Every Method: " + everyResult)
+
+// 3. Filter Method(***)
+// Syntax: Array.filter(callback)
+var filterResult = [12,15,5,8,23,44].filter((value) => {
+    return value < 10
+})
+console.log("Filter Method: " + filterResult)
+
+// 4 For Each Method
+// Syntax: Array.forEach(callback(element,idx))
+var forEachResult = [12,13,14,15,16].forEach((value,idx) =>{
+    console.log("For Each Method" + value * 2)
+})
+
+// 5. Reverse Method
+// Syntax: Array.reverse() [never use]
+var reverseResult = [1,2,3,4,8].reverse()
+console.log("Reverse Array:" + reverseResult)
+
+// 6. Index of Method
+// Syntax: Array.indexOf()
+var indexOfArray = [5,5,132,123,1].indexOf(132)
+console.log("Index of Method" + indexOfArray)
+
+// 7. Join Method
+// Syntax: Array.join(seperator)
+var joinArray = new Array("Hello","Arjun","How are you")
+var stringJoin = joinArray.join("!")
+console.log("Join Method" + stringJoin)
+
+// 8. Last Index of Method
+// Syntax: Array.lastIndexOf(element)
+var indexOfLastElement = [1,2,34,53423,2312,12,1].lastIndexOf(2312)
+console.log("Last index of Method:" + indexOfLastElement)
+
+// 9. Map Method(*****)
+// Syntax: Array.map(callback)
+var arrayForMap = [12,3,2,123,3]
+let newArrayForMap = arrayForMap.map(value => value * 2)
+console.log("Map Method:" + newArrayForMap)
+
+// 10. Pop Method
+// Syntax: Array.pop()
+var lastElementofArray = ["Jay","Arjun","Jenny","Ludmilla"].pop()
+console.log("POP Method: " + lastElementofArray)
