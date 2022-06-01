@@ -107,3 +107,83 @@ console.log("Map Method:" + newArrayForMap)
 // Syntax: Array.pop()
 var lastElementofArray = ["Jay","Arjun","Jenny","Ludmilla"].pop()
 console.log("POP Method: " + lastElementofArray)
+
+// 11. Push Method(***)
+// Syntax: Array.push(element)
+let stringArray = ["William","Jay","Sahil","Arjun"]
+
+let newArrayToPush = stringArray.push("Larry")
+console.log(newArrayToPush)
+
+// 12. Reduce Method(***)
+// Syntax: Array.reduce(callback(left,right))
+
+var reduceNumber = [1,2,3,4,5].reduce((left,right) => left*right )
+console.log("Reduce Method: "+ reduceNumber)
+
+// 13. Shift Method
+// Syntax: Array.shift()
+// Removes first element in the array
+var shiftNumber = [10,20,30,40,50]
+shiftNumber.shift()
+console.log(shiftNumber)
+
+// 14. Slice Method(***)
+// Syntax: Array.slice(numberOfElements)
+var sliceItems = ['cup','house','spoon','plate','knife','something']
+var newSliceItems = sliceItems.slice(2)
+console.log("Slice Method:" + newSliceItems)
+
+// 15. Splice Method
+// Syntax: Array.splice(element as the starting point, deletecount)
+// Delete 2 items and with 1 index
+var splicedItems = [1,2,3,4,5]
+
+var deletedSplicedItems = splicedItems.splice(1,3)
+console.log("Spliced Method:" + deletedSplicedItems)
+
+// 16. unshift Method
+// Syntax: Array.unshift(newElements)
+// it always starts from the begining
+
+var unshiftArray = [1,2,3,4,5,5,6,15]
+var newUnshiftArray = unshiftArray.unshift(22,23)
+console.log(unshiftArray)
+
+// 17. Some Method
+// Syntax: Array.some(callback(element,index))
+
+// Some Method test whether some element in the array passes the
+// test implement by the provided (expression)
+
+var isBigEnoughSome = element => element >=10
+
+var someRetreval = [2,3,5,8,9,4].some(isBigEnoughSome)
+
+console.log("Some Method: " + someRetreval)
+
+// 18. Sort Method(***)
+var sortArray = new Array('a','d','b','c','e')
+
+console.log("Sort Method: " + sortArray.sort())
+
+// 19. toString Method
+// Syntax: Array.toString()
+var toStringArray = ["Hello", "World"]
+console.log("String Method: "+ toStringArray.toLocaleString())
+
+// 20. Find Method(***)
+// Syntax: Array.find(callback(element,index))
+var findNum = [2,5,4,1,5]
+
+var oddNum = findNum.find(element => element % 2 == 1)
+
+console.log("Find Method: " + oddNum)
+
+
+// Array Destructuring (******)
+var arrayDestruct = [1,2,3,4,5]
+
+var [a,b,c,d,e] = arrayDestruct
+console.log(d)
+
