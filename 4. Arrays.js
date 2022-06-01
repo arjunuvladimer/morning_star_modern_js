@@ -38,3 +38,27 @@ console.log(sum)
 // 3 * 5 + 4 * 7    3 * 6 + 4 * 8
 // 19 22
 // 43 50
+
+
+var array1 = [1,2,3,4]
+var array2 = new Array(1,2,3,4)
+
+// Built in Methods
+// 1. Concat Method
+// Array.concat(array1,array2,array3,...)
+// Syntax: used to merge multiple arrays
+var alpha = ["a","b","c"]
+var numeric = [1,2,3]
+var alphaNumeric = alpha.concat(numeric)
+console.log("Concat Method" + alphaNumeric)
+
+// 2. Every Method
+// Array.every(callback(element,index))
+// Iterate each element in the array and gives the result as boolean
+// statement
+var everyResult = [1,10,12,13].every(
+    (value,idx) => {
+        return idx < 3
+    }
+)
+console.log("Every Method: " + everyResult)

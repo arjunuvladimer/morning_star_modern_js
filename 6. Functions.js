@@ -105,7 +105,26 @@ function division(){
 }
 
 // Asynchronous Programming
-addition()
-subtract() // delay of time
-multiplication()
-division()
+addition() // 1s
+setTimeout(subtract,0) // delay of time // 2s
+multiplication() // 1s
+division() // 1s
+
+
+function girl(){
+    function guy(){
+        return order
+    }
+    guy()
+}
+
+// javascript engine => single thread => barer
+
+// Functional Hoisting
+console.log(hoist()) // Functional Call
+
+function hoist(){
+    console.log("Hello World Hoisting")
+    return 10
+} // Functional Definition
+
